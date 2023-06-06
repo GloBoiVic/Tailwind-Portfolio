@@ -1,6 +1,6 @@
 import "./index.css";
 import NavBar from "./components/NavBar";
-import Home from "./components/Home";
+import Hero from "./components/Hero";
 import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Portfolio from "./components/portfolio";
@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
+      <Hero />
       <About />
       <SocialLinks />
       <Portfolio />

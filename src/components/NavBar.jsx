@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [hamburger, setHamburger] = useState(false);
@@ -11,23 +12,23 @@ function NavBar() {
   const links = [
     {
       id: 1,
-      link: 'home',
+      link: "home",
     },
     {
       id: 2,
-      link: 'about',
+      link: "about",
     },
     {
       id: 3,
-      link: 'portfolio',
+      link: "portfolio",
     },
     {
       id: 4,
-      link: 'experience',
+      link: "experience",
     },
     {
       id: 5,
-      link: 'contact',
+      link: "contact",
     },
   ];
 
@@ -46,7 +47,9 @@ function NavBar() {
               key={id}
               className="px-4 font-medium text-gray-500 capitalize duration-200 cursor-pointer hover:scale-105"
             >
-              {link}
+              <Link to={link} smooth duration={500}>
+                {link}
+              </Link>
             </li>
           );
         })}
@@ -67,7 +70,9 @@ function NavBar() {
                 key={id}
                 className="px-4 py-6 text-4xl capitalize cursor-pointer"
               >
-                {link}
+                <Link onClick={handleHamburger} to={link} smooth duration={500}>
+                  {link}
+                </Link>
               </li>
             );
           })}
