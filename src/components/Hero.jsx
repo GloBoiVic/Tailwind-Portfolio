@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import heroImage from "../assets/heroImage.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -10,9 +11,22 @@ const Hero = () => {
     >
       <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 mx-auto md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl font-bold text-white sm:text-6xl">
+          <TypeAnimation
+            sequence={[
+              "Front-End Web Developer",
+              1000,
+              "Programmer",
+              1000,
+              "Gym Enthusiast",
+              1000,
+            ]}
+            speed={50}
+            className="text-4xl font-bold text-white sm:text-6xl"
+            repeat={Infinity}
+          />
+          {/* <h2 className="text-4xl font-bold text-white sm:text-6xl">
             Front-End Web Developer
-          </h2>
+          </h2> */}
           <p className="py-4 text-xl text-gray-500">
             A self-taught developer with a solid foundation in HTML, CSS, and
             JavaScript, I am eager to bring my creativity and problem-solving
