@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       name="home"
-      className="w-full pt-40 md:pt-10 text-primary h-screen p-10"
+      className="w-full min-h-screen p-10 pt-40 md:pt-10 text-primary"
     >
       <div className="flex flex-col items-center justify-center h-[60rem] max-w-screen-lg px-4 mx-auto md:flex-row md:gap-10">
         <div className="flex flex-col justify-center">
@@ -21,11 +21,11 @@ const Hero = () => {
               1000,
             ]}
             speed={50}
-            className="text-9xl font-bold text-primary sm:text-6xl"
+            className="font-bold text-9xl text-primary sm:text-4xl"
             repeat={Infinity}
           />
 
-          <p className="mt-8 py-4 text-2xl text-offblue">
+          <p className="py-4 mt-8 text-2xl text-gray-400">
             A self-taught developer with a solid foundation in HTML, CSS, and
             JavaScript, I am eager to bring my creativity and problem-solving
             skills to the world of web development.
@@ -35,7 +35,7 @@ const Hero = () => {
               to="portfolio"
               smooth
               duration={700}
-              className="flex items-center px-6 py-3 my-2 text-xl text-white rounded-md cursor-pointer group bg-primary w-fit font-semibold"
+              className="flex items-center px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer hover:scale-125 group hover:bg-info bg-primary w-fit"
             >
               Portfolio
               <span className="duration-300 group-hover:rotate-90">
@@ -48,7 +48,7 @@ const Hero = () => {
         <div>
           <img
             src={heroImage}
-            className="mx-auto rounded-2xl w-full "
+            className="w-full mx-auto rounded-2xl "
             alt="my-profile"
           />
         </div>

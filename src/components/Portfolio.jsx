@@ -38,7 +38,7 @@ const Portfolio = () => {
   return (
     <section
       name="portfolio"
-      className="bg-gray w-full text-primary h-screen p-10"
+      className="bg-offwhite w-full text-primary min-h-screen p-10"
     >
       <div className="max-w-screen-lg  mx-auto flex flex-col justify-center">
         <div className="">

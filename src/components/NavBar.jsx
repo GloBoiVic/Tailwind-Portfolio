@@ -29,7 +29,7 @@ function NavBar() {
   ];
 
   return (
-    <nav className="fixed flex items-center justify-between w-full h-20 px-4 text-primary bg-gray shadow-lg">
+    <nav className="fixed flex items-center justify-between w-full h-20 px-4 text-primary bg-offwhite shadow-lg">
       <header>
         <h1 className="m-5 text-3xl font-bold">
           <span className="bg-accent rounded-md p-1 text-white font-bold">
@@ -61,7 +61,7 @@ function NavBar() {
         id="menu"
       >
         <ul
-          className="pt-4 text-gray-700
+          className="pt-4
           md:flex
           md:justify-between 
           md:pt-0 space-x-1 text-xl"
@@ -90,7 +90,7 @@ function NavBar() {
       </div>
 
       {hamburger && (
-        <ul className="md:hidden flex justify-start items-center cursor-pointer absolute top-20 left-0 w-full bg-gray shadow-lg ">
+        <ul className="md:hidden flex justify-start items-center cursor-pointer absolute top-20 left-0 w-full bg-offwhite shadow-lg ">
           {links.map(({ id, link }) => {
             return (
               <li
