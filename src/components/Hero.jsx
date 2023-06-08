@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section
       name="home"
-      className="w-full min-h-screen p-10 pt-40 md:pt-10 text-primary"
+      className="w-full min-h-screen p-10 pt-40 hero md:pt-10 text-primary dark:bg-primary"
     >
-      <div className="flex flex-col items-center justify-center h-[60rem] max-w-screen-lg px-4 mx-auto md:flex-row md:gap-10">
+      <div className="flex flex-col items-center justify-center h-[60rem] max-w-screen-xl px-4 mx-auto md:flex-row md:gap-10">
         <div className="flex flex-col justify-center">
           <TypeAnimation
             sequence={[
@@ -21,7 +21,7 @@ const Hero = () => {
               1000,
             ]}
             speed={50}
-            className="font-bold text-9xl text-primary sm:text-4xl"
+            className="text-2xl font-bold text-primary whitespace-nowrap dark:text-offgray md:text-5xl"
             repeat={Infinity}
           />
 
@@ -35,7 +35,7 @@ const Hero = () => {
               to="portfolio"
               smooth
               duration={700}
-              className="flex items-center px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer hover:scale-125 group hover:bg-info bg-primary w-fit"
+              className="flex items-center px-6 py-3 my-2 text-xl text-white transition-all duration-700 rounded-md cursor-pointer hover:scale-125 group hover:bg-info bg-primary dark:bg-accent w-fit dark:text-offgray"
             >
               Portfolio
               <span className="duration-300 group-hover:rotate-90">

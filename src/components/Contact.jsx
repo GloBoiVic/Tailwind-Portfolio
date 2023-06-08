@@ -2,9 +2,9 @@ const Contact = () => {
   return (
     <section
       name="contact"
-      className="w-full min-h-screen p-10 bg-offwhite text-primary"
+      className="w-full p-10 mx-auto min-h-80 bg-offwhite dark:bg-primary dark:text-offgray dark:border-t-2 dark:border-info text-primary"
     >
-      <div className="flex flex-col justify-center max-w-screen-lg p-4 mx-auto">
+      <div className="max-w-screen-lg p-4 mx-auto ">
         <div className="pb-8">
           <p className="inline text-4xl font-bold border-b-4 border-accent">
             Contact
@@ -14,10 +14,10 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="p-4 mt-4 border-2 rounded-lg dark:border-info w-100 md:w-2/3">
           <form
             action="https://getform.io/f/a96638c6-e657-41ce-971b-2b672466465d"
-            className="grid w-full px-8 pt-6 pb-8 mb-4 rounded shadow-md border-primary md:w-1/2 text-primary"
+            className="border-primary text-primary dark:text-offgray"
             method="POST"
           >
             <label
@@ -29,7 +29,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              className="w-full p-3 mb-4 text-lg leading-tight border-2 rounded shadow appearance-none focus:outline-none focus:shadow-outline text-primary"
+              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none dark:focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
             />
             <label
               className="block mb-3 text-xl font-semibold"
@@ -40,7 +40,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              className="w-full p-3 mb-4 text-lg leading-tight border-2 rounded shadow appearance-none focus:outline-none focus:shadow-outline text-primary"
+              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none dark:focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
             />
             <label
               className="block mb-3 text-xl font-semibold"
@@ -51,7 +51,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              className="w-full p-3 mb-4 text-lg leading-tight border-2 rounded shadow appearance-none focus:outline-none focus:shadow-outline text-primary"
+              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none dark:focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
             />
             <label
               className="block mb-3 text-xl font-semibold"
@@ -62,9 +62,9 @@ const Contact = () => {
             <textarea
               name="message"
               rows="5"
-              className="p-2 text-lg border-2 rounded-md text-primary focus:outline-none"
+              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none dark:focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
             ></textarea>
-            <button className="flex items-center justify-center w-full px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer hover:bg-info bg-primary ">
+            <button className="flex items-center justify-center w-full px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer dark:bg-accent hover:bg-info bg-primary ">
               Lets Chat
             </button>
           </form>

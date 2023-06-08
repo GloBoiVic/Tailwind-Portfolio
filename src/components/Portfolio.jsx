@@ -38,29 +38,29 @@ const Portfolio = () => {
   return (
     <section
       name="portfolio"
-      className="bg-offwhite w-full text-primary min-h-screen p-10"
+      className="w-full min-h-screen p-10 dark:border-t-2 bg-offwhite dark:text-offgray dark:bg-primary dark:border-info text-primary"
     >
-      <div className="max-w-screen-lg  mx-auto flex flex-col justify-center">
+      <div className="flex flex-col justify-center max-w-screen-xl mx-auto">
         <div className="">
-          <h1 className="text-4xl font-bold inline border-b-4 border-accent">
+          <h1 className="inline text-4xl font-bold border-b-4 border-accent">
             My Portfolio
           </h1>
           <p className="py-6 text-2xl">Check out some of my work</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-col-3 gap-8 ">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-col-3 ">
           {porfolios.map(({ id, src }) => {
             return (
               <div
                 key={id}
-                className="shadow-md shadow-primary rounded-lg duration-200 hover:scale-105"
+                className="duration-200 rounded-lg shadow-md dark:shadow-info shadow-primary hover:scale-105"
               >
                 <img src={src} alt="" className="rounded-md " />
                 <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-semibold text-xl">
+                  <button className="w-1/2 px-6 py-3 m-4 text-xl font-semibold duration-200 hover:scale-105">
                     Demo
                   </button>
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-semibold text-xl">
+                  <button className="w-1/2 px-6 py-3 m-4 text-xl font-semibold duration-200 hover:scale-105">
                     Code
                   </button>
                 </div>

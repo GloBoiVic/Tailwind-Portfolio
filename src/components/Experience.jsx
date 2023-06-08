@@ -45,16 +45,19 @@ const Experience = () => {
     },
   ];
   return (
-    <section name="experience" className="w-full text-primary min-h-fit p-10">
-      <div className="max-w-screen-lg  mx-auto flex flex-col justify-center">
+    <section
+      name="experience"
+      className="w-full p-10 dark:border-t-2 dark:bg-primary dark:text-offgray dark:border-info text-primary min-h-fit"
+    >
+      <div className="flex flex-col justify-center max-w-screen-xl mx-auto">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-accent">
+          <p className="inline text-4xl font-bold border-b-4 border-accent">
             Experience
           </p>
           <p className="py-6 text-2xl">My Tech Stack</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-col-3 gap-8 text-center font-semibold text-xl py-5 px-12 sm:px-0 ">
+        <div className="grid w-full grid-cols-2 gap-8 px-12 py-5 text-xl font-semibold text-center sm:grid-col-3 sm:px-0 ">
           {techStack.map(({ id, src, title, style }) => {
             return (
               <div
