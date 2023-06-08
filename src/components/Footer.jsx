@@ -15,12 +15,15 @@ const Footer = () => {
         <div className="text-xl font-semibold ">
           <ul className="flex flex-col gap-4 md:flex-row">
             <li>
-              <a href="" className="flex gap-2">
+              <a
+                href="https://www.linkedin.com/in/developing-vic/"
+                className="flex gap-2"
+              >
                 <FaLinkedin size={30} />
               </a>
             </li>
             <li>
-              <a href="" className="flex gap-2">
+              <a href="https://github.com/GloBoiVic" className="flex gap-2">
                 <FaGithub size={30} />
               </a>
             </li>

@@ -1,35 +1,32 @@
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import EtchASketch from "../assets/portfolio/etch-a-sketch.jpg";
+import tesla from "../assets/portfolio/tesla.jpg";
+import todo from "../assets/portfolio/todo.jpg";
 
 const Portfolio = () => {
   const porfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: EtchASketch,
+      demo: "https://globoivic.github.io/Etch-A-Sketch/",
+      code: "https://github.com/GloBoiVic/Etch-A-Sketch",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: todo,
+      demo: "https://globoivic.github.io/JS-Todo-List/",
+      code: "https://github.com/GloBoiVic/JS-Todo-List",
     },
     {
       id: 3,
-      src: navbar,
+      src: tesla,
+      demo: "https://github.com/GloBoiVic/Tesla_Clone",
+      code: "https://globoivic.github.io/Tesla_Clone/",
     },
     {
       id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: tesla,
+      demo: "https://globoivic.github.io/Etch-A-Sketch/",
+      code: "https://github.com/GloBoiVic/Etch-A-Sketch",
     },
   ];
   {
@@ -49,19 +46,23 @@ const Portfolio = () => {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 md:grid-col-3 ">
-          {porfolios.map(({ id, src }) => {
+          {porfolios.map(({ id, src, demo, code }) => {
             return (
               <div
                 key={id}
                 className="duration-200 rounded-lg shadow-md dark:shadow-info shadow-primary hover:scale-105"
               >
-                <img src={src} alt="" className="rounded-md " />
+                <img src={src} className="rounded-md " />
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 m-4 text-xl font-semibold duration-200 hover:scale-105">
-                    Demo
+                    <a href={demo} target="_blank" rel="noreferrer">
+                      Demo
+                    </a>
                   </button>
                   <button className="w-1/2 px-6 py-3 m-4 text-xl font-semibold duration-200 hover:scale-105">
-                    Code
+                    <a href={code} target="_blank" rel="noreferrer">
+                      Code
+                    </a>
                   </button>
                 </div>
               </div>
