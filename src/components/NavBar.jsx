@@ -53,7 +53,7 @@ function NavBar() {
   ];
 
   return (
-    <nav className="fixed flex items-center justify-between w-full h-20 px-4 shadow-lg text-primary bg-offwhite dark:bg-primary dark:text-offgray">
+    <nav className="fixed z-10 flex items-center justify-between w-full h-20 px-4 shadow-lg text-primary bg-offwhite dark:bg-primary dark:text-offgray">
       <header>
         <h1 className="m-5 text-3xl font-bold">
           <span className="p-1 font-bold text-white rounded-md bg-accent">
