@@ -20,14 +20,14 @@ const Portfolio = () => {
     {
       id: 3,
       src: tesla,
-      demo: "https://github.com/GloBoiVic/Tesla_Clone",
-      code: "https://globoivic.github.io/Tesla_Clone/",
+      demo: "https://globoivic.github.io/Tesla_Clone/",
+      code: "https://github.com/GloBoiVic/Tesla_Clone",
     },
     {
       id: 4,
       src: calculatorApp,
-      demo: "https://github.com/GloBoiVic/Odin-Calculator",
-      code: "https://globoivic.github.io/Odin-Calculator/",
+      demo: "https://globoivic.github.io/Odin-Calculator/",
+      code: "https://github.com/GloBoiVic/Odin-Calculator",
     },
   ];
 
