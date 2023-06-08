@@ -1,6 +1,7 @@
 import EtchASketch from "../assets/portfolio/etch-a-sketch.jpg";
 import tesla from "../assets/portfolio/tesla.jpg";
 import todo from "../assets/portfolio/todo.jpg";
+import calculatorApp from "../assets/portfolio/calculator.jpg";
 
 const Portfolio = () => {
   const porfolios = [
@@ -24,14 +25,12 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: tesla,
-      demo: "https://globoivic.github.io/Etch-A-Sketch/",
-      code: "https://github.com/GloBoiVic/Etch-A-Sketch",
+      src: calculatorApp,
+      demo: "https://github.com/GloBoiVic/Odin-Calculator",
+      code: "https://globoivic.github.io/Odin-Calculator/",
     },
   ];
-  {
-    /*  TODO Add link functionality to card*/
-  }
+
   return (
     <section
       name="portfolio"
