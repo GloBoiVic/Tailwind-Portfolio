@@ -1,6 +1,6 @@
 import EtchASketch from "../assets/portfolio/etch-a-sketch.jpg";
-import tesla from "../assets/portfolio/tesla.jpg";
 import todo from "../assets/portfolio/todo.jpg";
+import tesla from "../assets/portfolio/tesla.jpg";
 import calculatorApp from "../assets/portfolio/calculator.jpg";
 
 const Portfolio = () => {
