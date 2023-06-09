@@ -64,7 +64,7 @@ const Contact = () => {
               rows="5"
               className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
             ></textarea>
-            <button className="flex items-center justify-center w-full px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer dark:bg-accent hover:bg-info bg-primary ">
+            <button className="flex items-center justify-center w-full px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer dark:hover:bg-info dark:bg-accent hover:bg-info bg-primary ">
               Lets Chat
             </button>
           </form>
