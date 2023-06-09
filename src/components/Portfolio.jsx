@@ -34,9 +34,9 @@ const Portfolio = () => {
   return (
     <section
       name="portfolio"
-      className="w-full min-h-screen p-10 dark:border-t-2 bg-offwhite dark:text-offgray dark:bg-primary dark:border-info text-primary"
+      className="min-h-screen p-10  dark:border-t-2 bg-offwhite dark:text-offgray dark:bg-primary dark:border-info text-primary"
     >
-      <div className="flex flex-col justify-center max-w-screen-xl mx-auto">
+      <div className="container flex flex-col justify-center max-w-screen-xl mx-auto">
         <div className="">
           <h1 className="inline text-4xl font-bold border-b-4 border-accent">
             My Portfolio
@@ -44,7 +44,7 @@ const Portfolio = () => {
           <p className="py-6 text-2xl">Check out some of my work</p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-col-3 ">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 ">
           {porfolios.map(({ id, src, demo, code }) => {
             return (
               <div

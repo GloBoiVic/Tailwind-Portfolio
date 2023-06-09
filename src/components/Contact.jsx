@@ -2,9 +2,9 @@ const Contact = () => {
   return (
     <section
       name="contact"
-      className="w-full p-10 mx-auto min-h-80 bg-offwhite dark:bg-primary dark:text-offgray dark:border-t-2 dark:border-info text-primary"
+      className="p-10 mx-auto min-h-80 bg-offwhite dark:bg-primary dark:text-offgray dark:border-t-2 dark:border-info text-primary"
     >
-      <div className="max-w-screen-xl p-4 mx-auto ">
+      <div className="container max-w-screen-xl p-4 mx-auto ">
         <div className="pb-8">
           <p className="inline text-4xl font-bold border-b-4 border-accent">
             Contact
@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="p-4 mt-4 border-2 rounded-lg dark:border-info w-100 md:w-2/3">
+        <div className="container p-4 mt-4 border-2 rounded-lg dark:border-info w-100 md:w-2/3">
           <form
             action="https://getform.io/f/a96638c6-e657-41ce-971b-2b672466465d"
             className="border-primary text-primary dark:text-offgray"

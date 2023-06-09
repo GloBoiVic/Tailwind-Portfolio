@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <section
       name="home"
-      className="w-full min-h-screen p-10 pt-40 hero md:pt-10 text-primary dark:bg-primary"
+      className="min-h-screen p-10 pt-40 hero md:pt-10 text-primary dark:bg-primary"
     >
-      <div className="flex flex-col items-center justify-center h-[60rem] max-w-screen-xl px-4 mx-auto md:flex-row md:gap-10">
-        <div className="flex flex-col justify-center">
+      <div className="flex container flex-col items-center justify-center h-[65rem] md:h-[60rem] max-w-screen-xl px-4 mx-auto md:flex-row md:gap-10">
+        <div className="">
           <TypeAnimation
             sequence={[
               "Web Developer",
@@ -21,15 +21,17 @@ const Hero = () => {
               1000,
             ]}
             speed={50}
-            className="text-2xl font-bold text-primary whitespace-nowrap dark:text-offgray md:text-5xl"
+            className="text-3xl font-bold text-primary whitespace-nowrap dark:text-offgray md:text-5xl lg:text-6xl"
             repeat={Infinity}
           />
 
-          <p className="py-4 mt-8 text-2xl text-gray-400">
-            A self-taught developer with a solid foundation in HTML, CSS, and
-            JavaScript, I am eager to bring my creativity and problem-solving
-            skills to the world of web development.
-          </p>
+          <div>
+            <p className="py-4 mt-8 text-2xl tracking-tighter text-gray-400">
+              A self-taught developer with a solid foundation in HTML, CSS, and
+              JavaScript, I am eager to bring my creativity and problem-solving
+              skills to the world of web development.
+            </p>
+          </div>
           <div className="mb-12">
             <Link
               to="portfolio"
@@ -45,7 +47,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div>
+        <div className="@container-lg">
           <img
             src={heroImage}
             className="w-full mx-auto rounded-2xl "

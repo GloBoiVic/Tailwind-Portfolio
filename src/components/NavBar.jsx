@@ -63,23 +63,6 @@ function NavBar() {
         </h1>
       </header>
 
-      {/* Loop through links array and map them as li tags*/}
-
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        id="menu-button"
-        className="block w-10 h-10 cursor-pointer md:hidden"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg> */}
       <div className="z-10 pr-4 ml-auto cursor-pointer text-primary dark:text-offgray">
         {toggle ? (
           <MdOutlineToggleOn onClick={handleThemeSwitch} size={40} />
@@ -118,22 +101,29 @@ function NavBar() {
         {hamburger ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
-      {hamburger && (
-        <ul className="absolute left-0 flex items-center justify-start w-full shadow-lg cursor-pointer md:hidden top-20 bg-offwhite dark:bg-primary">
-          {links.map(({ id, link }) => {
-            return (
-              <li
-                key={id}
-                className="px-2 py-6 mx-2 text-2xl font-semibold capitalize border-b-2 border-accent"
-              >
-                <Link onClick={handleHamburger} to={link} smooth duration={500}>
-                  {link}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      )}
+      <div className="shadow-lg">
+        {hamburger && (
+          <ul className="absolute left-0 flex flex-col justify-start w-full pl-6 shadow-xl cursor-pointer md:hidden top-20 bg-offwhite dark:bg-primary">
+            {links.map(({ id, link }) => {
+              return (
+                <li
+                  key={id}
+                  className="px-2 py-1 mx-2 text-lg font-semibold capitalize "
+                >
+                  <Link
+                    onClick={handleHamburger}
+                    to={link}
+                    smooth
+                    duration={500}
+                  >
+                    {link}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
     </nav>
   );
 }
