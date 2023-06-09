@@ -26,8 +26,8 @@ const Portfolio = () => {
     {
       id: 4,
       src: calculatorApp,
-      demo: "https://globoivic.github.io/Odin-Calculator/",
-      code: "https://github.com/GloBoiVic/Odin-Calculator",
+      demo: "https://globoivic.github.io/Calculator-App/",
+      code: "https://github.com/GloBoiVic/Calculator-App",
     },
   ];
 
