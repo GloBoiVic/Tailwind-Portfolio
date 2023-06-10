@@ -103,7 +103,7 @@ function NavBar() {
 
       <div className="shadow-lg">
         {hamburger && (
-          <ul className="absolute left-0 flex flex-col justify-start w-full pl-6 shadow-xl cursor-pointer md:hidden top-20 bg-offwhite dark:bg-primary">
+          <ul className="absolute left-0 z-10 flex flex-col justify-start w-full pl-6 shadow-xl cursor-pointer md:hidden top-20 bg-offwhite dark:bg-primary">
             {links.map(({ id, link }) => {
               return (
                 <li

@@ -9,7 +9,7 @@ const Hero = () => {
       name="home"
       className="min-h-screen p-10 pt-40 hero md:pt-10 text-primary dark:bg-primary"
     >
-      <div className="flex container flex-col items-center justify-center h-[65rem] md:h-[60rem] max-w-screen-xl px-4 mx-auto md:flex-row md:gap-10">
+      <div className="flex container flex-col items-center justify-center h-[50rem] md:h-[60rem] max-w-screen-xl px-4 mx-auto md:flex-row md:gap-10">
         <div className="">
           <TypeAnimation
             sequence={[
