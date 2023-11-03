@@ -29,15 +29,15 @@ function NavBar() {
 
   return (
     <header className="fixed z-50 flex items-center justify-between w-full h-20 px-10 shadow-lg dark:bg-primary text-primary bg-offwhite dark:text-offgray">
-      <h1 className="text-3xl font-bold ">
+      <h1 className="text-2xl font-bold md:text-3xl ">
         <span className="p-1 font-bold text-white rounded-md bg-accent">Victor</span> Ike
       </h1>
 
       <div className="z-10 ml-auto mr-4 cursor-pointer text-primary dark:text-offgray">
         {theme === 'dark' ? (
-          <MdOutlineToggleOn onClick={handleThemeSwitch} size={40} />
+          <MdOutlineToggleOn onClick={handleThemeSwitch} className="w-6 h-6" />
         ) : (
-          <MdOutlineToggleOff onClick={handleThemeSwitch} size={40} />
+          <MdOutlineToggleOff onClick={handleThemeSwitch} className="w-6 h-6" />
         )}
       </div>
       <nav className="hidden w-full md:flex md:items-center md:w-auto" id="menu" role="menu">
@@ -61,7 +61,7 @@ function NavBar() {
         onClick={handleHamburger}
         className="z-10 pr-4 cursor-pointer text-primary dark:text-offgray md:hidden"
       >
-        {hamburger ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {hamburger ? <FaTimes className="w-6 h-6" /> : <FaBars className="w-6 h-6" />}
       </div>
 
       <div className="shadow-lg">

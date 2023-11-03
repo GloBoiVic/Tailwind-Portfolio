@@ -1,44 +1,54 @@
 import { portfolioData } from '../assets/data/data';
-function Portfolio() {
-	return (
-		<section
-			name='portfolio'
-			className='min-h-screen p-10 dark:border-t-2 bg-offwhite dark:text-offgray dark:bg-primary dark:border-info text-primary'
-		>
-			<div className='container flex flex-col justify-center max-w-screen-xl mx-auto'>
-				<div className=''>
-					<h1 className='inline text-4xl font-bold border-b-4 border-accent'>My Portfolio</h1>
-					<p className='py-6 text-2xl'>Check out some of my work</p>
-				</div>
 
-				<div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2 '>
-					{portfolioData.map(({ id, src, demo, code }) => {
-						console.log(src);
-						return (
-							<div
-								key={id}
-								className='duration-200 rounded-lg shadow-md dark:shadow-info shadow-primary hover:scale-105'
-							>
-								<img src={src} className='rounded-md ' />
-								<div className='flex items-center justify-center'>
-									<button className='w-1/2 px-6 py-3 m-4 text-xl font-semibold duration-200 hover:scale-105'>
-										<a href={demo} target='_blank' rel='noreferrer'>
-											Demo
-										</a>
-									</button>
-									<button className='w-1/2 px-6 py-3 m-4 text-xl font-semibold duration-200 hover:scale-105'>
-										<a href={code} target='_blank' rel='noreferrer'>
-											Code
-										</a>
-									</button>
-								</div>
-							</div>
-						);
-					})}
-				</div>
-			</div>
-		</section>
-	);
+function Portfolio() {
+  return (
+    <section name="portfolio" className="min-h-screen px-10 py-20 md:px-20">
+      <div className="flex flex-col justify-center">
+        <div>
+          <h1 className="inline text-2xl font-bold border-b-4 md:text-4xl border-accent">
+            My Portfolio
+          </h1>
+          <p className="py-6 text-xl">Check out some of my work</p>
+        </div>
+
+        <div className="grid gap-8 sm:grid-cols-2 w-fit">
+          {portfolioData.map(({ id, image, svg, name, description, demo, code }) => {
+            return (
+              <div
+                key={id}
+                className="grid overflow-hidden duration-200 rounded-lg shadow-md dark:shadow-info shadow-primary hover:scale-105 sm:last:col-span-2 grid-rows-[auto_1fr_auto]"
+              >
+                <div className="px-4 py-2">
+                  <h3 className="flex gap-3 font-bold tracking-wide">
+                    <span>
+                      <img src={svg} alt="" className="w-6 h-6" />
+                    </span>
+                    {name}
+                  </h3>
+                  <p className="tracking-tight text-offblue">{description}</p>
+                </div>
+                <figure className="">
+                  <img src={image} className="object-cover" />
+                </figure>
+                <div className="flex items-center justify-center">
+                  <button className="w-1/2 px-6 py-3 text-xl font-semibold border hover:underline">
+                    <a href={demo} target="_blank" rel="noreferrer">
+                      Demo
+                    </a>
+                  </button>
+                  <button className="w-1/2 px-6 py-3 text-xl font-semibold border hover:underline">
+                    <a href={code} target="_blank" rel="noreferrer">
+                      Code
+                    </a>
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Portfolio;
