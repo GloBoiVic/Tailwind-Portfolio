@@ -28,12 +28,10 @@ function NavBar() {
   }
 
   return (
-    <header className="fixed z-10 flex items-center justify-between w-full h-20 px-5 shadow-lg text-primary bg-offwhite dark:bg-primary dark:text-offgray">
-      <div>
-        <h1 className="text-3xl font-bold ">
-          <span className="p-1 font-bold text-white rounded-md bg-accent">Victor</span> Ike
-        </h1>
-      </div>
+    <header className="fixed z-50 flex items-center justify-between w-full h-20 px-10 shadow-lg dark:bg-primary text-primary bg-offwhite dark:text-offgray">
+      <h1 className="text-3xl font-bold ">
+        <span className="p-1 font-bold text-white rounded-md bg-accent">Victor</span> Ike
+      </h1>
 
       <div className="z-10 ml-auto mr-4 cursor-pointer text-primary dark:text-offgray">
         {theme === 'dark' ? (

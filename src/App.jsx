@@ -9,15 +9,17 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="relative flex dark:bg-primary text-primary bg-offwhite dark:text-offgray">
       <NavBar />
-      <Hero />
-      <SocialLinks />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Footer />
-    </>
+      <main className="px-10 mt-20 overflow-auto">
+        <Hero />
+        {/* <SocialLinks />
+        <Portfolio />
+        <Experience />
+        <Contact />
+        <Footer /> */}
+      </main>
+    </div>
   );
 }
 
