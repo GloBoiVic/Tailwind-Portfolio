@@ -39,8 +39,8 @@ export const portfolioData = [
     description: 'A code snippet sharing app for developers',
     svg: 'javascript.svg',
     image: 'picture-my-code.jpg',
-    demo: 'https://globoivic.github.io/Tesla-Clone/',
-    code: 'https://github.com/GloBoiVic/Tesla-Clone',
+    demo: 'https://picture-my-code.netlify.app/',
+    code: 'https://github.com/GloBoiVic/Picture-My-Code',
   },
   {
     name: 'Milwaukee Blooms',
