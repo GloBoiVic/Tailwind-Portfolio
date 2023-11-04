@@ -17,30 +17,6 @@ export const NavLinks = [
   },
 ];
 
-export const socialLinks = [
-  {
-    svg: 'linkedin.svg',
-    href: 'https://www.linkedin.com/in/developing-vic/',
-    style: 'rounded-tr-md',
-  },
-  {
-    svg: 'github.svg',
-    href: 'https://github.com/GloBoiVic',
-    style: 'rounded-tr-md',
-  },
-  {
-    svg: 'gmail.svg',
-    href: 'mailto:victorike@gmail.com',
-    style: 'rounded-br-md',
-  },
-  {
-    svg: 'pdf.svg',
-    href: '/Vike-Resume.pdf',
-    style: 'rounded-br-md',
-    download: true,
-  },
-];
-
 export const portfolioData = [
   {
     name: 'Wordit',
