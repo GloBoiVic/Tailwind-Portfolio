@@ -42,10 +42,10 @@ function NavBar() {
       </div>
       <nav className="hidden w-full md:flex md:items-center md:w-auto" id="menu" role="menu">
         <ul className="pt-4 space-x-1 text-xl md:flex md:justify-between md:pt-0" id="menu">
-          {NavLinks.map(({ id, link }) => {
+          {NavLinks.map(({ link }) => {
             return (
               <li
-                key={id}
+                key={link}
                 className="block py-2 font-semibold capitalize duration-200 border-b-2 cursor-pointer md:p-4 text-primary dark:text-offgray border-accent hover:scale-105"
               >
                 <Link to={link} smooth duration={500}>

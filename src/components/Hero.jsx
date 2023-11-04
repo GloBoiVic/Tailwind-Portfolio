@@ -1,5 +1,4 @@
 import { Link } from 'react-scroll';
-import heroImage from '../assets/heroImage.png';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -33,7 +32,11 @@ const Hero = () => {
           </Link>
         </div>
         <div className="md:self-center">
-          <img src={heroImage} className="object-cover max-w-full rounded-xl" alt="my-profile" />
+          <img
+            src="heroImage.png"
+            className="object-cover max-w-full rounded-xl"
+            alt="my-profile"
+          />
         </div>
       </div>
     </section>

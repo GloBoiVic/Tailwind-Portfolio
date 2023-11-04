@@ -1,70 +1,24 @@
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
+import { techStack } from '../assets/data/data';
 
 const Experience = () => {
-  const techStack = [
-    {
-      id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-cyan-500",
-    },
-    {
-      id: 5,
-      src: github,
-      title: "Github",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 6,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-cyan-200",
-    },
-  ];
   return (
-    <section
-      name="experience"
-      className="p-10 dark:border-t-2 dark:bg-primary dark:text-offgray dark:border-info text-primary min-h-fit"
-    >
-      <div className="container flex flex-col justify-center max-w-screen-xl mx-auto">
+    <section className="min-h-screen px-10 py-20 bg-white dark:border-t-2 md:px-20 dark:border-info dark:bg-primary">
+      <div className="flex flex-col justify-center">
         <div>
-          <p className="inline text-4xl font-bold border-b-4 border-accent">
+          <p className="inline text-2xl font-bold border-b-4 sm:text-4xl border-accent">
             Experience
           </p>
-          <p className="py-6 text-2xl">My Tech Stack</p>
+          <p className="py-6 text-xl">My Tech Stack</p>
         </div>
 
-        <div className="grid w-full grid-cols-2 gap-8 py-5 text-xl font-semibold text-center sm:grid-cols-2 lg:grid-cols-3 sm:px-0 ">
-          {techStack.map(({ id, src, title, style }) => {
+        <div className="grid gap-8 sm:grid-cols-2">
+          {techStack.map(({ svg, title, style }) => {
             return (
               <div
-                key={id}
+                key={title}
                 className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
               >
-                <img src={src} className="w-20 mx-auto" alt="" />
+                <img src={svg} className="w-20" alt="" />
                 <p className="mt-4">{title}</p>
               </div>
             );
