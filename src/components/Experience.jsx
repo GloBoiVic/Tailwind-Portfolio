@@ -1,4 +1,5 @@
 import { techStack } from '../assets/data/data';
+import { cn } from '../lib/utils';
 
 const Experience = () => {
   return (
@@ -11,14 +12,14 @@ const Experience = () => {
           <p className="py-6 text-xl">My Tech Stack</p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
           {techStack.map(({ svg, title, style }) => {
             return (
               <div
                 key={title}
-                className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+                className={cn('shadow-md border py-2 rounded-lg flex flex-col items-center', style)}
               >
-                <img src={svg} className="w-20" alt="" />
+                <img src={svg} className="object-contain w-20 h-20" alt="" />
                 <p className="mt-4">{title}</p>
               </div>
             );
