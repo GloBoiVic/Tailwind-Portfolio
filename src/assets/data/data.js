@@ -42,6 +42,14 @@ export const portfolioData = [
     demo: 'https://globoivic.github.io/Tesla-Clone/',
     code: 'https://github.com/GloBoiVic/Tesla-Clone',
   },
+  {
+    name: 'Milwaukee Blooms',
+    description: 'Landing page for a local flower shop',
+    svg: 'typescript.svg',
+    image: 'picture-my-code.jpg',
+    demo: 'https://globoivic.github.io/Tesla-Clone/',
+    code: 'https://github.com/GloBoiVic/Tesla-Clone',
+  },
 ];
 
 export const techStack = [
