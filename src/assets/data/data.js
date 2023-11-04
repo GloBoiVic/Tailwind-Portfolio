@@ -44,26 +44,31 @@ export const techStack = [
   {
     svg: 'mongodb.svg',
     title: 'MongoDB',
-    style: 'shadow-green-500',
+    style: 'shadow-green-500 border-green-500',
   },
   {
     svg: 'nodejs.svg',
     title: 'Node.js',
-    style: 'shadow-green-500',
+    style: 'shadow-green-500 border-green-500',
   },
   {
     svg: 'express.svg',
     title: 'Express.js',
-    style: 'shadow-yellow-500',
+    style: 'shadow-yellow-500 border-yellow-500',
   },
   {
     svg: 'react.svg',
     title: 'React',
-    style: 'shadow-cyan-500',
+    style: 'shadow-cyan-500 border-cyan-500',
   },
   {
     svg: 'tailwindcss.svg',
     title: 'Tailwindcss',
-    style: 'shadow-cyan-400',
+    style: 'shadow-cyan-500 border-cyan-500',
+  },
+  {
+    svg: 'git.svg',
+    title: 'Git',
+    style: 'shadow-red-400 border-red-500',
   },
 ];
