@@ -6,6 +6,8 @@ const Footer = () => {
         <span className="p-1 font-bold text-white rounded-md bg-accent">Victor</span> Ike
       </h1>
 
+      <p className="text-lg">© GloBoiVic</p>
+
       <ul className="flex gap-2">
         <li>
           <a href="https://www.linkedin.com/in/developing-vic/">

@@ -43,7 +43,6 @@ function NavBar() {
       <nav className="hidden w-full md:flex md:items-center md:w-auto" id="menu" role="menu">
         <ul className="pt-4 space-x-1 text-xl md:flex md:justify-between md:pt-0" id="menu">
           {NavLinks.map(({ id, link }) => {
-            console.log(link);
             return (
               <li
                 key={id}

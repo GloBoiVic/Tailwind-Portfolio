@@ -19,7 +19,7 @@ function Portfolio() {
             return (
               <div
                 key={name}
-                className="grid overflow-hidden duration-200 rounded-lg shadow-md dark:shadow-info  shadow-primary hover:scale-105 sm:last:col-span-2 grid-rows-[auto_1fr_auto] border dark:border-info"
+                className="grid overflow-hidden duration-200 rounded-lg shadow-md dark:shadow-info shadow-primary hover:scale-105 grid-rows-[auto_1fr_auto] border dark:border-info"
               >
                 <div className="px-4 pt-6">
                   <h3 className="flex gap-3 font-bold tracking-wide">
