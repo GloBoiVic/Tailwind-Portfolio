@@ -2,7 +2,10 @@ import { portfolioData } from '../assets/data/data';
 
 function Portfolio() {
   return (
-    <section className="min-h-screen px-10 py-20 dark:border-t-2 md:px-20 dark:border-info">
+    <section
+      name="portfolio"
+      className="min-h-screen px-10 py-20 dark:border-t-2 md:px-20 dark:border-info"
+    >
       <div className="flex flex-col justify-center">
         <div>
           <h1 className="inline text-2xl font-bold border-b-4 sm:text-4xl border-accent">
@@ -11,21 +14,21 @@ function Portfolio() {
           <p className="py-6 text-xl">Check out some of my work</p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 w-fit">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 w-fit">
           {portfolioData.map(({ image, svg, name, description, demo, code }) => {
             return (
               <div
                 key={name}
                 className="grid overflow-hidden duration-200 rounded-lg shadow-md dark:shadow-info  shadow-primary hover:scale-105 sm:last:col-span-2 grid-rows-[auto_1fr_auto] border dark:border-info"
               >
-                <div className="px-4 py-2">
+                <div className="px-4 pt-6">
                   <h3 className="flex gap-3 font-bold tracking-wide">
                     <span>
                       <img src={svg} alt="" className="w-6 h-6" />
                     </span>
                     {name}
                   </h3>
-                  <p className="tracking-tight text-offblue">{description}</p>
+                  <p className="my-4 tracking-tight text-offblue">{description}</p>
                 </div>
                 <figure className="">
                   <img src={image} className="object-cover" />

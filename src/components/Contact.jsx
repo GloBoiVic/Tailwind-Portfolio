@@ -1,73 +1,30 @@
 const Contact = () => {
   return (
-    <section
-      name="contact"
-      className="p-10 mx-auto min-h-80 bg-offwhite dark:bg-primary dark:text-offgray dark:border-t-2 dark:border-info text-primary"
-    >
-      <div className="container max-w-screen-xl p-4 mx-auto ">
-        <div className="pb-8">
-          <p className="inline text-4xl font-bold border-b-4 border-accent">
-            Contact
+    <section className="px-10 py-20 dark:border-t-2 md:px-20 dark:border-info" name="contact">
+      <p className="inline text-2xl font-bold border-b-4 sm:text-4xl border-accent">Contact</p>
+      <div className="max-w-xl p-5 mt-8 overflow-hidden border rounded shadow-md shadow-info dark:border-info">
+        <div className="space-y-2">
+          <h3 className="text-lg font-bold sm:text-xl">Get in touch</h3>
+          <p>Looking for a developer? Let's work together</p>
+          <p>
+            Email me at{' '}
+            <span className="font-bold">
+              <a href="mailto:victorike08@gmail.com">victorike08@gmail.com</a>
+            </span>
           </p>
-          <p className="py-6 text-2xl">
-            Got an opportunity in mind? Get in touch
+          <p>
+            Message me on{' '}
+            <a
+              className="cursor-pointer hover:underline"
+              href="https://www.linkedin.com/in/developing-vic/"
+            >
+              LinkedIn
+            </a>{' '}
+            or checkout my{' '}
+            <a className="cursor-pointer hover:underline" href="https://github.com/GloBoiVic">
+              github
+            </a>
           </p>
-        </div>
-
-        <div className="container p-4 mt-4 border-2 rounded-lg dark:border-info w-100 md:w-2/3">
-          <form
-            action="https://getform.io/f/a96638c6-e657-41ce-971b-2b672466465d"
-            className="border-primary text-primary dark:text-offgray"
-            method="POST"
-          >
-            <label
-              className="block mb-3 text-xl font-semibold"
-              htmlFor="firstname"
-            >
-              First Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
-            />
-            <label
-              className="block mb-3 text-xl font-semibold"
-              htmlFor="lastname"
-            >
-              Last Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
-            />
-            <label
-              className="block mb-3 text-xl font-semibold"
-              htmlFor="lastname"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
-            />
-            <label
-              className="block mb-3 text-xl font-semibold"
-              htmlFor="message"
-            >
-              Message
-            </label>
-            <textarea
-              name="message"
-              rows="5"
-              className="block w-full px-4 py-2 my-2 text-xl font-semibold border-2 rounded-lg shadow appearance-none focus:border-accent focus:outline-none focus:shadow-outline dark:text-offgray text-primary dark:bg-primary dark:border-info "
-            ></textarea>
-            <button className="flex items-center justify-center w-full px-6 py-3 my-2 text-xl font-semibold text-white transition-all duration-700 rounded-md cursor-pointer dark:hover:bg-info dark:bg-accent hover:bg-info bg-primary ">
-              Lets Chat
-            </button>
-          </form>
         </div>
       </div>
     </section>

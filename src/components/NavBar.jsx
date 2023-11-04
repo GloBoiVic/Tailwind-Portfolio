@@ -29,7 +29,7 @@ function NavBar() {
 
   return (
     <header className="fixed z-50 flex items-center justify-between w-full h-20 px-10 shadow-lg dark:bg-primary text-primary bg-offwhite dark:text-offgray">
-      <h1 className="text-2xl font-bold md:text-3xl ">
+      <h1 className="text-2xl font-bold md:text-3xl">
         <span className="p-1 font-bold text-white rounded-md bg-accent">Victor</span> Ike
       </h1>
 
@@ -42,13 +42,14 @@ function NavBar() {
       </div>
       <nav className="hidden w-full md:flex md:items-center md:w-auto" id="menu" role="menu">
         <ul className="pt-4 space-x-1 text-xl md:flex md:justify-between md:pt-0" id="menu">
-          {NavLinks.map(({ link }) => {
+          {NavLinks.map(({ id, link }) => {
+            console.log(link);
             return (
               <li
-                key={link}
+                key={id}
                 className="block py-2 font-semibold capitalize duration-200 border-b-2 cursor-pointer md:p-4 text-primary dark:text-offgray border-accent hover:scale-105"
               >
-                <Link to={link} smooth duration={500}>
+                <Link to={link} smooth={true} duration={500}>
                   {link}
                 </Link>
               </li>
@@ -73,7 +74,7 @@ function NavBar() {
                   key={id}
                   className="px-2 py-1 mx-2 text-lg font-semibold capitalize hover:underline hover:decoration-accent "
                 >
-                  <Link onClick={handleHamburger} to={link} smooth duration={500}>
+                  <Link onClick={handleHamburger} to={link} smooth={true} duration={500}>
                     {link}
                   </Link>
                 </li>

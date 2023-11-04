@@ -1,11 +1,21 @@
 import { Link } from 'react-scroll';
-import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import { MdOutlineDownload } from 'react-icons/md';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
+  const onResumeButtonClick = () => {
+    const pdfUrl = 'Vike-Resume.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = "Victor Ike's resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section className="min-h-screen px-10 py-20 bg-white dark:bg-primary md:px-20">
-      <div className="flex flex-col gap-8 mt-20 md:mt-60 md:flex-row">
+    <section name="home" className="min-h-screen px-10 py-20 bg-white dark:bg-primary md:px-20">
+      <div className="flex flex-col gap-8 mt-28 md:mt-50 md:flex-row">
         <div className="grow">
           <TypeAnimation
             sequence={['Developer', 1000, 'Programmer', 1000, 'Gym Enthusiast', 1000]}
@@ -19,17 +29,15 @@ const Hero = () => {
             efficient, and user-centric applications; ready to embark on new and exciting challenges
             in the ever-evolving world of technology.
           </p>
-          <Link
-            to="portfolio"
-            smooth
-            duration={700}
+          <button
             className="flex items-center px-4 py-2 mt-6 text-lg text-white transition-all duration-700 rounded-md cursor-pointer md:text-xl hover:scale-110 group hover:bg-info bg-primary dark:bg-accent w-fit dark:text-offgray"
+            onClick={onResumeButtonClick}
           >
-            Portfolio
-            <span className="duration-300 group-hover:rotate-90">
-              <MdKeyboardDoubleArrowRight size={25} />
+            See my resume
+            <span>
+              <MdOutlineDownload className="w-6 h-6" />
             </span>
-          </Link>
+          </button>
         </div>
         <div className="md:self-center">
           <img
