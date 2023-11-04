@@ -41,6 +41,7 @@ const Hero = () => {
         </div>
         <div className="md:self-center">
           <img
+            loading="lazy"
             src="heroImage.png"
             className="object-cover max-w-full rounded-xl"
             alt="my-profile"
