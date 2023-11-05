@@ -4,9 +4,9 @@ function Portfolio() {
   return (
     <section
       name="portfolio"
-      className="min-h-screen px-10 py-20 dark:border-t-2 md:px-20 dark:border-info"
+      className="min-h-screen px-10 py-20 bg-offwhite dark:border-t-2 md:px-20 dark:border-info dark:bg-primary"
     >
-      <div className="flex flex-col justify-center">
+      <div className="container flex flex-col justify-center">
         <div>
           <h1 className="inline text-2xl font-bold border-b-4 sm:text-4xl border-accent">
             My Portfolio

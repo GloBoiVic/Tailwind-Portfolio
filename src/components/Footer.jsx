@@ -1,13 +1,17 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 const Footer = () => {
   return (
     <footer className="flex items-center justify-between w-full h-20 px-10 border-t-2 shadow-lg dark:border-info">
       <h1 className="text-2xl font-bold md:text-3xl">
-        <span className="p-1 font-bold text-white rounded-md bg-accent">Victor</span> Ike
+        <Link to="home" smooth>
+          <span className="p-1 font-bold text-white rounded-md cursor-pointer bg-accent">
+            Victor
+          </span>
+        </Link>{' '}
+        Ike
       </h1>
-
       <p className="text-lg">© GloBoiVic</p>
-
       <ul className="flex gap-2">
         <li>
           <a href="https://www.linkedin.com/in/developing-vic/">
