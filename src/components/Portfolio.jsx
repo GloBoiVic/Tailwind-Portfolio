@@ -31,7 +31,7 @@ function Portfolio() {
                   <p className="my-4 tracking-tight text-offblue">{description}</p>
                 </div>
                 <figure className="">
-                  <img src={image} className="object-cover" />
+                  <img src={image} className="object-cover max-w-full" />
                 </figure>
                 <div className="flex items-center justify-center">
                   <button className="w-1/2 px-6 py-3 text-xl font-semibold border hover:underline dark:border-info">
