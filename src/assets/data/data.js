@@ -21,7 +21,7 @@ export const portfolioData = [
   {
     name: 'Wordit',
     description: 'Keep track of your words with this custom vocabulary tracker app',
-    image: 'picture-my-code.jpg',
+    image: 'wordit.jpg',
     svg: 'typescript.svg',
     demo: 'https://globoivic.github.io/Etch-A-Sketch/',
     code: 'https://github.com/GloBoiVic/Wordit',
@@ -46,7 +46,7 @@ export const portfolioData = [
     name: 'Milwaukee Blooms',
     description: 'Landing page for a local flower shop',
     svg: 'typescript.svg',
-    image: 'picture-my-code.jpg',
+    image: 'milwaukee-blooms.jpg',
     demo: 'https://globoivic.github.io/Tesla-Clone/',
     code: 'https://github.com/GloBoiVic/Tesla-Clone',
   },
