@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <section className="px-10 py-20 dark:border-t-2 md:px-20 dark:border-info" name="contact">
-      <div className="container">
+    <section className="dark:border-t-2 dark:border-info" name="contact">
+      <div className="container px-10 py-20 md:px-20">
         <p className="inline text-2xl font-bold border-b-4 sm:text-4xl border-accent">Contact</p>
         <div className="max-w-xl p-5 mt-8 overflow-hidden border rounded shadow-md shadow-info dark:border-info">
           <div className="space-y-2">
