@@ -25,7 +25,7 @@ const Hero = () => {
               repeat={Infinity}
             />
             <p className="mt-8 text-lg tracking-tighter text-offblue md:text-xl">
-              I am a passionate Full Stack JavaScript Developer with a strong proficiency in the
+              I am a passionate Full-Stack JavaScript Developer with a strong proficiency in the
               MERN (MongoDB, Express, React, Node.js) stack. I&apos;m committed to delivering
               high-quality, efficient, and user-centric applications. I am ready to embark on new
               and exciting challenges in the ever-evolving world of technology; let's work!
