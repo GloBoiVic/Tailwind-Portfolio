@@ -23,7 +23,7 @@ export const portfolioData = [
     description: 'Keep track of your words with this custom vocabulary tracker app',
     image: 'wordit.jpg',
     svg: 'typescript.svg',
-    demo: 'https://globoivic.github.io/Etch-A-Sketch/',
+    demo: 'https://wordit-vocab.netlify.app/',
     code: 'https://github.com/GloBoiVic/Wordit',
   },
   {
@@ -31,8 +31,8 @@ export const portfolioData = [
     description: 'A full-stack dashboard app for a hotel company',
     image: 'picture-my-code.jpg',
     svg: 'javascript.svg',
-    demo: 'https://globoivic.github.io/JS-Todo-List/',
-    code: 'https://github.com/GloBoiVic/JS-Todo-List',
+    demo: 'https://github.com/GloBoiVic/The-Wild-Oasis',
+    code: 'https://github.com/GloBoiVic/The-Wild-Oasis',
   },
   {
     name: 'Picture My Code',
@@ -47,8 +47,8 @@ export const portfolioData = [
     description: 'Landing page for a local flower shop',
     svg: 'typescript.svg',
     image: 'milwaukee-blooms.jpg',
-    demo: 'https://globoivic.github.io/Tesla-Clone/',
-    code: 'https://github.com/GloBoiVic/Tesla-Clone',
+    demo: 'https://github.com/GloBoiVic/Milwaukee-Blooms',
+    code: 'https://github.com/GloBoiVic/Milwaukee-Blooms',
   },
 ];
 
