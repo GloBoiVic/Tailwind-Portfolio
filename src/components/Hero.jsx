@@ -25,10 +25,10 @@ const Hero = () => {
               repeat={Infinity}
             />
             <p className="mt-8 text-lg tracking-tighter text-offblue md:text-xl">
-              I am a passionate Full-Stack JavaScript Developer with a strong proficiency in the
-              MERN (MongoDB, Express, React, Node.js) stack. I&apos;m committed to delivering
-              high-quality, efficient, and user-centric applications. I am ready to embark on new
-              and exciting challenges in the ever-evolving world of technology; let's work!
+              I am a passionate UI Engineer with a keen focus on front-end development while possessing the versatility to collaborate on 
+              full-stack applications and deliver end-to-end products. With a strong proficiency in the
+              MERN (MongoDB, Express, React, Node.js) stack, I am committed to delivering
+              high-quality, efficient, and user-centric applications.
             </p>
             <button
               className="flex items-center px-4 py-2 mt-6 text-lg text-white transition-all duration-700 rounded-md cursor-pointer md:text-xl hover:scale-110 group hover:bg-info bg-primary dark:bg-accent w-fit dark:text-offgray"
