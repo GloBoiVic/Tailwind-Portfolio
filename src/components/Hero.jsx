@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   const onResumeButtonClick = () => {
-    const pdfUrl = 'Vike-Resume.pdf';
+    const pdfUrl = 'Victor-Ike-Resume.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = "Victor Ike's resume.pdf";
